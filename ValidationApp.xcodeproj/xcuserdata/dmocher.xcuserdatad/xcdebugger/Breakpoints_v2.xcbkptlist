@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "765945BC-FE03-4683-AF0A-004DB19B2CD2"
+            uuid = "C4281FFA-8A7C-46F6-A668-37B4D3DF1C02"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../ValidationCore/Sources/ValidationCore/ValidationCore.swift"
+            filePath = "../ValidationCore/Sources/ValidationCore/Cose.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "cose(from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5C29BE92-99E9-4249-8653-4982FB52A991"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../ValidationCore/Sources/ValidationCore/ValidationCore.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "cose(from:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "hasValidSignature(for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

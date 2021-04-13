@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8796C259261D9EF100BAB830 /* ValidationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C258261D9EF100BAB830 /* ValidationApp.swift */; };
-		8796C25B261D9EF100BAB830 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C25A261D9EF100BAB830 /* ContentView.swift */; };
-		8796C25D261D9EF300BAB830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8796C25C261D9EF300BAB830 /* Assets.xcassets */; };
-		8796C260261D9EF300BAB830 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8796C25F261D9EF300BAB830 /* Preview Assets.xcassets */; };
+		870DB2E7262486F400221D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870DB2E1262486F300221D0B /* Assets.xcassets */; };
+		870DB2E8262486F400221D0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DB2E2262486F300221D0B /* SceneDelegate.swift */; };
+		870DB2E9262486F400221D0B /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 870DB2E3262486F400221D0B /* Base.lproj */; };
+		870DB2EA262486F400221D0B /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DB2E4262486F400221D0B /* ScanViewController.swift */; };
+		870DB2EB262486F400221D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DB2E5262486F400221D0B /* AppDelegate.swift */; };
+		876B11A3262495930086820C /* ValidCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11A2262495930086820C /* ValidCell.swift */; };
+		876B11AC262495B10086820C /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11AB262495B10086820C /* PersonCell.swift */; };
+		876B11B1262495C20086820C /* VaccinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11B0262495C20086820C /* VaccinationCell.swift */; };
+		876B11B6262495DC0086820C /* PastInfectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11B5262495DC0086820C /* PastInfectionCell.swift */; };
+		876B11BB262495ED0086820C /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11BA262495ED0086820C /* TestCell.swift */; };
+		876B11C0262495FD0086820C /* CertificateMetadataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11BF262495FD0086820C /* CertificateMetadataCell.swift */; };
+		876B11CE262497E70086820C /* ValidationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11CD262497E70086820C /* ValidationResultViewModel.swift */; };
+		876B11D32624984B0086820C /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11D22624984B0086820C /* CellViewModel.swift */; };
+		876B11D8262498A70086820C /* ValidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11D7262498A70086820C /* ValidCellViewModel.swift */; };
+		876B11E026249E440086820C /* PersonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11DF26249E440086820C /* PersonCellViewModel.swift */; };
+		876B11E526249F010086820C /* VaccinationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11E426249F010086820C /* VaccinationCellViewModel.swift */; };
+		876B11EA26249F850086820C /* PastInfectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11E926249F850086820C /* PastInfectionCellViewModel.swift */; };
+		876B11EF2624A1340086820C /* TestCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11EE2624A1340086820C /* TestCellViewModel.swift */; };
+		876B11F42624A1AF0086820C /* CertificateMetadataCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11F32624A1AF0086820C /* CertificateMetadataCellViewModel.swift */; };
+		876B11F92624B9410086820C /* PersonIdentifierCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11F82624B9410086820C /* PersonIdentifierCell.swift */; };
+		876B11FE2624BA0F0086820C /* PersonIdentifierCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11FD2624BA0F0086820C /* PersonIdentifierCellViewModel.swift */; };
 		8796C26B261D9EF300BAB830 /* ValidationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C26A261D9EF300BAB830 /* ValidationAppTests.swift */; };
 		8796C276261D9EF300BAB830 /* ValidationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C275261D9EF300BAB830 /* ValidationAppUITests.swift */; };
 		8796C28F261DD7BD00BAB830 /* ValidationCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8796C28E261DD7BD00BAB830 /* ValidationCore */; };
+		87FE88B3262487D6003D9E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE88B2262487D6003D9E8E /* Main.storyboard */; };
+		87FE88BB26248B06003D9E8E /* ValidationResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE88BA26248B06003D9E8E /* ValidationResult.storyboard */; };
+		87FE88C026248B48003D9E8E /* ValidationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE88BF26248B48003D9E8E /* ValidationResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +54,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		870DB2E0262486F300221D0B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870DB2E1262486F300221D0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		870DB2E2262486F300221D0B /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		870DB2E3262486F400221D0B /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		870DB2E4262486F400221D0B /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		870DB2E5262486F400221D0B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		876B11A2262495930086820C /* ValidCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidCell.swift; sourceTree = "<group>"; };
+		876B11AB262495B10086820C /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		876B11B0262495C20086820C /* VaccinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCell.swift; sourceTree = "<group>"; };
+		876B11B5262495DC0086820C /* PastInfectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastInfectionCell.swift; sourceTree = "<group>"; };
+		876B11BA262495ED0086820C /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		876B11BF262495FD0086820C /* CertificateMetadataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateMetadataCell.swift; sourceTree = "<group>"; };
+		876B11CD262497E70086820C /* ValidationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResultViewModel.swift; sourceTree = "<group>"; };
+		876B11D22624984B0086820C /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		876B11D7262498A70086820C /* ValidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidCellViewModel.swift; sourceTree = "<group>"; };
+		876B11DF26249E440086820C /* PersonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCellViewModel.swift; sourceTree = "<group>"; };
+		876B11E426249F010086820C /* VaccinationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCellViewModel.swift; sourceTree = "<group>"; };
+		876B11E926249F850086820C /* PastInfectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastInfectionCellViewModel.swift; sourceTree = "<group>"; };
+		876B11EE2624A1340086820C /* TestCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCellViewModel.swift; sourceTree = "<group>"; };
+		876B11F32624A1AF0086820C /* CertificateMetadataCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateMetadataCellViewModel.swift; sourceTree = "<group>"; };
+		876B11F82624B9410086820C /* PersonIdentifierCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonIdentifierCell.swift; sourceTree = "<group>"; };
+		876B11FD2624BA0F0086820C /* PersonIdentifierCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonIdentifierCellViewModel.swift; sourceTree = "<group>"; };
 		8796C255261D9EF100BAB830 /* ValidationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8796C258261D9EF100BAB830 /* ValidationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationApp.swift; sourceTree = "<group>"; };
-		8796C25A261D9EF100BAB830 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8796C25C261D9EF300BAB830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8796C25F261D9EF300BAB830 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8796C261261D9EF300BAB830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8796C266261D9EF300BAB830 /* ValidationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8796C26A261D9EF300BAB830 /* ValidationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAppTests.swift; sourceTree = "<group>"; };
 		8796C26C261D9EF300BAB830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +84,9 @@
 		8796C275261D9EF300BAB830 /* ValidationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAppUITests.swift; sourceTree = "<group>"; };
 		8796C277261D9EF300BAB830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8796C286261DA15900BAB830 /* ValidationCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ValidationCore; path = ../ValidationCore; sourceTree = "<group>"; };
+		87FE88B2262487D6003D9E8E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		87FE88BA26248B06003D9E8E /* ValidationResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ValidationResult.storyboard; sourceTree = "<group>"; };
+		87FE88BF26248B48003D9E8E /* ValidationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +115,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		876B11A72624959B0086820C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				876B11A2262495930086820C /* ValidCell.swift */,
+				876B11D7262498A70086820C /* ValidCellViewModel.swift */,
+				876B11AB262495B10086820C /* PersonCell.swift */,
+				876B11DF26249E440086820C /* PersonCellViewModel.swift */,
+				876B11B0262495C20086820C /* VaccinationCell.swift */,
+				876B11E426249F010086820C /* VaccinationCellViewModel.swift */,
+				876B11B5262495DC0086820C /* PastInfectionCell.swift */,
+				876B11E926249F850086820C /* PastInfectionCellViewModel.swift */,
+				876B11BA262495ED0086820C /* TestCell.swift */,
+				876B11BF262495FD0086820C /* CertificateMetadataCell.swift */,
+				876B11D22624984B0086820C /* CellViewModel.swift */,
+				876B11EE2624A1340086820C /* TestCellViewModel.swift */,
+				876B11F32624A1AF0086820C /* CertificateMetadataCellViewModel.swift */,
+				876B11F82624B9410086820C /* PersonIdentifierCell.swift */,
+				876B11FD2624BA0F0086820C /* PersonIdentifierCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		8796C24C261D9EF100BAB830 = {
 			isa = PBXGroup;
 			children = (
@@ -99,21 +161,19 @@
 		8796C257261D9EF100BAB830 /* ValidationApp */ = {
 			isa = PBXGroup;
 			children = (
-				8796C258261D9EF100BAB830 /* ValidationApp.swift */,
-				8796C25A261D9EF100BAB830 /* ContentView.swift */,
-				8796C25C261D9EF300BAB830 /* Assets.xcassets */,
-				8796C261261D9EF300BAB830 /* Info.plist */,
-				8796C25E261D9EF300BAB830 /* Preview Content */,
+				870DB2E5262486F400221D0B /* AppDelegate.swift */,
+				870DB2E1262486F300221D0B /* Assets.xcassets */,
+				870DB2E3262486F400221D0B /* Base.lproj */,
+				870DB2E0262486F300221D0B /* Info.plist */,
+				870DB2E2262486F300221D0B /* SceneDelegate.swift */,
+				870DB2E4262486F400221D0B /* ScanViewController.swift */,
+				87FE88B2262487D6003D9E8E /* Main.storyboard */,
+				87FE88BA26248B06003D9E8E /* ValidationResult.storyboard */,
+				87FE88BF26248B48003D9E8E /* ValidationResultViewController.swift */,
+				876B11CD262497E70086820C /* ValidationResultViewModel.swift */,
+				876B11A72624959B0086820C /* Cells */,
 			);
 			path = ValidationApp;
-			sourceTree = "<group>";
-		};
-		8796C25E261D9EF300BAB830 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				8796C25F261D9EF300BAB830 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		8796C269261D9EF300BAB830 /* ValidationAppTests */ = {
@@ -204,6 +264,7 @@
 				TargetAttributes = {
 					8796C254261D9EF100BAB830 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					8796C265261D9EF300BAB830 = {
 						CreatedOnToolsVersion = 12.4;
@@ -243,8 +304,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8796C260261D9EF300BAB830 /* Preview Assets.xcassets in Resources */,
-				8796C25D261D9EF300BAB830 /* Assets.xcassets in Resources */,
+				87FE88BB26248B06003D9E8E /* ValidationResult.storyboard in Resources */,
+				87FE88B3262487D6003D9E8E /* Main.storyboard in Resources */,
+				870DB2E7262486F400221D0B /* Assets.xcassets in Resources */,
+				870DB2E9262486F400221D0B /* Base.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +332,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8796C25B261D9EF100BAB830 /* ContentView.swift in Sources */,
-				8796C259261D9EF100BAB830 /* ValidationApp.swift in Sources */,
+				876B11F92624B9410086820C /* PersonIdentifierCell.swift in Sources */,
+				876B11AC262495B10086820C /* PersonCell.swift in Sources */,
+				876B11EF2624A1340086820C /* TestCellViewModel.swift in Sources */,
+				876B11B6262495DC0086820C /* PastInfectionCell.swift in Sources */,
+				870DB2EB262486F400221D0B /* AppDelegate.swift in Sources */,
+				870DB2EA262486F400221D0B /* ScanViewController.swift in Sources */,
+				876B11BB262495ED0086820C /* TestCell.swift in Sources */,
+				876B11E026249E440086820C /* PersonCellViewModel.swift in Sources */,
+				876B11A3262495930086820C /* ValidCell.swift in Sources */,
+				876B11D8262498A70086820C /* ValidCellViewModel.swift in Sources */,
+				876B11CE262497E70086820C /* ValidationResultViewModel.swift in Sources */,
+				876B11C0262495FD0086820C /* CertificateMetadataCell.swift in Sources */,
+				876B11FE2624BA0F0086820C /* PersonIdentifierCellViewModel.swift in Sources */,
+				876B11B1262495C20086820C /* VaccinationCell.swift in Sources */,
+				876B11E526249F010086820C /* VaccinationCellViewModel.swift in Sources */,
+				876B11F42624A1AF0086820C /* CertificateMetadataCellViewModel.swift in Sources */,
+				876B11EA26249F850086820C /* PastInfectionCellViewModel.swift in Sources */,
+				87FE88C026248B48003D9E8E /* ValidationResultViewController.swift in Sources */,
+				876B11D32624984B0086820C /* CellViewModel.swift in Sources */,
+				870DB2E8262486F400221D0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,20 +506,24 @@
 		8796C27B261D9EF300BAB830 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ValidationApp/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9CYHJNG644;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ValidationApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ValidationApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = at.asitplus.ValidationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,18 +532,21 @@
 		8796C27C261D9EF300BAB830 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ValidationApp/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9CYHJNG644;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ValidationApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ValidationApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = at.asitplus.ValidationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
