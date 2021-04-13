@@ -18,7 +18,7 @@ struct PersonCellViewModel : CellViewModel {
         guard let person = result.payload.person else {
             return nil
         }
-        name = person.name
+        name = "\(person.givenName ?? "" ) \(person.familyName ?? "")"
         birthDate = person.birthDate
     }
  

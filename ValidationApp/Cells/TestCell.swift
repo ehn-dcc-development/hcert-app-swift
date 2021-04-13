@@ -14,9 +14,11 @@ class TestCell: UITableViewCell {
     @IBOutlet weak var manufacturerLabel: UILabel!
     @IBOutlet weak var sampleOriginLabel: UILabel!
     @IBOutlet weak var timestampSampleLabel: UILabel!
+    @IBOutlet weak var timestampResultLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var facilityLabel: UILabel!
-
+    @IBOutlet weak var countryLabel: UILabel!
+    
     var vm : TestCellViewModel?
     
     func setup(with vm: TestCellViewModel?) {
@@ -25,8 +27,10 @@ class TestCell: UITableViewCell {
         nameLabel.text = vm?.name ?? placeholder
         manufacturerLabel.text = vm?.manufacturer ?? placeholder
         sampleOriginLabel.text = vm?.sampleOrigin ?? placeholder
-        timestampSampleLabel.text = vm?.timeStampSample ?? placeholder
+        timestampSampleLabel.text = vm?.timestampSample ?? placeholder
+        timestampResultLabel.text = vm?.timestampResult ?? placeholder
         resultLabel.text = vm?.result ?? placeholder
         facilityLabel.text = vm?.facility ?? placeholder
+        countryLabel.text = vm?.country ?? placeholder
     }
 }

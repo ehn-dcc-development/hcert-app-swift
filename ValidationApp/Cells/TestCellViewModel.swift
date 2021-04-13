@@ -16,9 +16,11 @@ struct TestCellViewModel : CellViewModel {
     let name: String?
     let manufacturer: String?
     let sampleOrigin: String?
-    let timeStampSample: String?
+    let timestampSample: String?
+    let timestampResult: String?
     let result: String?
     let facility: String?
+    let country: String?
 
     init(from testResult: Test) {
         disease = testResult.disease
@@ -26,8 +28,10 @@ struct TestCellViewModel : CellViewModel {
         name = testResult.name
         manufacturer = testResult.manufacturer
         sampleOrigin = testResult.sampleOrigin
-        timeStampSample = testResult.timeStampSample
+        timestampSample = testResult.timestampSample
+        timestampResult = testResult.timestampResult
         result = testResult.result
         facility = testResult.facility
+        country = testResult.country
     }
 }
