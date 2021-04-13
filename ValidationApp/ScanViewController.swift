@@ -13,7 +13,9 @@ class ScanViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "EHN QR Code Scanner"
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         var validationCore = ValidationCore()
         validationCore.validateQrCode(self) { result in

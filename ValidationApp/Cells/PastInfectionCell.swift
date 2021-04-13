@@ -8,10 +8,15 @@
 import UIKit
 
 class PastInfectionCell: UITableViewCell {
-
+    @IBOutlet weak var diseaseLabel: UILabel!
+    @IBOutlet weak var dateFirstPositiveLabel: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
+    
     var vm : PastInfectionCellViewModel?
     
     func setup(with vm: PastInfectionCellViewModel?) {
-        //TODO
+        diseaseLabel.text = vm?.disease ?? placeholder
+        dateFirstPositiveLabel.text = vm?.dateFirstPositiveTest ?? placeholder
+        countryLabel.text = vm?.country ?? placeholder
     }
 }

@@ -13,8 +13,10 @@ class ValidationResultViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Validation Result"
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -48,6 +50,7 @@ class ValidationResultViewController: UITableViewController {
             break
         }
         
+        cell.selectionStyle = .none
         return cell
     }
 

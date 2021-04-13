@@ -19,7 +19,3 @@ class PersonCell: UITableViewCell {
 
     }
 }
-
-extension UITableViewCell {
-    var placeholder : String { return "N/A" }
-}
