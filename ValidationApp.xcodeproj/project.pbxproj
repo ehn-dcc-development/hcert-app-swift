@@ -30,7 +30,7 @@
 		876B11FE2624BA0F0086820C /* PersonIdentifierCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11FD2624BA0F0086820C /* PersonIdentifierCellViewModel.swift */; };
 		8796C26B261D9EF300BAB830 /* ValidationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C26A261D9EF300BAB830 /* ValidationAppTests.swift */; };
 		8796C276261D9EF300BAB830 /* ValidationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C275261D9EF300BAB830 /* ValidationAppUITests.swift */; };
-		8796C28F261DD7BD00BAB830 /* ValidationCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8796C28E261DD7BD00BAB830 /* ValidationCore */; };
+		87B2AD7D262731FA000993DD /* ValidationCore in Frameworks */ = {isa = PBXBuildFile; productRef = 87B2AD7C262731FA000993DD /* ValidationCore */; };
 		87FE88B3262487D6003D9E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE88B2262487D6003D9E8E /* Main.storyboard */; };
 		87FE88BB26248B06003D9E8E /* ValidationResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE88BA26248B06003D9E8E /* ValidationResult.storyboard */; };
 		87FE88C026248B48003D9E8E /* ValidationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE88BF26248B48003D9E8E /* ValidationResultViewController.swift */; };
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8796C28F261DD7BD00BAB830 /* ValidationCore in Frameworks */,
+				87B2AD7D262731FA000993DD /* ValidationCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +211,7 @@
 			);
 			name = ValidationApp;
 			packageProductDependencies = (
-				8796C28E261DD7BD00BAB830 /* ValidationCore */,
+				87B2AD7C262731FA000993DD /* ValidationCore */,
 			);
 			productName = ValidationApp;
 			productReference = 8796C255261D9EF100BAB830 /* ValidationApp.app */;
@@ -286,7 +286,7 @@
 			);
 			mainGroup = 8796C24C261D9EF100BAB830;
 			packageReferences = (
-				8796C28D261DD7BD00BAB830 /* XCRemoteSwiftPackageReference "ValidationCore" */,
+				87B2AD7B262731FA000993DD /* XCRemoteSwiftPackageReference "ValidationCore" */,
 			);
 			productRefGroup = 8796C256261D9EF100BAB830 /* Products */;
 			projectDirPath = "";
@@ -509,6 +509,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -520,9 +521,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = at.asitplus.ValidationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,6 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -546,9 +549,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = at.asitplus.ValidationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -680,9 +684,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8796C28D261DD7BD00BAB830 /* XCRemoteSwiftPackageReference "ValidationCore" */ = {
+		87B2AD7B262731FA000993DD /* XCRemoteSwiftPackageReference "ValidationCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/dmocher/Documents/Projects/bmg_impfnachweis/ValidationApp/ValidationCore/";
+			repositoryURL = "https://github.com/ehn-digital-green-development/ValidationCore";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -691,9 +695,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8796C28E261DD7BD00BAB830 /* ValidationCore */ = {
+		87B2AD7C262731FA000993DD /* ValidationCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8796C28D261DD7BD00BAB830 /* XCRemoteSwiftPackageReference "ValidationCore" */;
+			package = 87B2AD7B262731FA000993DD /* XCRemoteSwiftPackageReference "ValidationCore" */;
 			productName = ValidationCore;
 		};
 /* End XCSwiftPackageProductDependency section */

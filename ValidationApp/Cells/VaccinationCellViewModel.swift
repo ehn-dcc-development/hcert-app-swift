@@ -38,7 +38,7 @@ struct VaccinationCellViewModel : CellViewModel {
         numberOf = vaccination.numberOf
         lotNumber = vaccination.lotNumber
         vaccinationDate = vaccination.vaccinationDate
-        administeringCentre = vaccination.administeringCentre
+        administeringCentre = vaccination.administeringCenter
         country = vaccination.country
     }
 }
