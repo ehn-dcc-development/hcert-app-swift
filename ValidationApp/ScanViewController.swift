@@ -17,19 +17,8 @@ class ScanViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        var validationCore = ValidationCore()
-        validationCore.validateQrCode(self) { result in
-            
-            switch(result) {
-            case .success(let validationResult):
-                self.result = validationResult
-                DispatchQueue.main.async {
-                    self.performSegue(withIdentifier: "showResult", sender: nil)
-                }
-            case .failure(let error): print(error)
-            }
-        }
-    }
+        startScan()
+   }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
@@ -43,6 +32,24 @@ class ScanViewController: UIViewController {
         }
     }
 
+    private func startScan() {
+        var validationCore = ValidationCore()
+        validationCore.validateQrCode(self) { result in
+            
+            switch(result) {
+            case .success(let validationResult):
+                self.result = validationResult
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "showResult", sender: nil)
+                }
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    print(error)
+                    self.startScan()
+                }
+            }
+        }
+    }
 
 }
 
