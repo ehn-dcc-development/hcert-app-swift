@@ -10,6 +10,7 @@ import ValidationCore
 
 class ScanViewController: UIViewController {
     var result : ValidationResult?
+    var error : ValidationError?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +18,8 @@ class ScanViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        result = nil
+        error = nil
         startScan()
    }
     
@@ -26,6 +29,9 @@ class ScanViewController: UIViewController {
             let target = segue.destination as? ValidationResultViewController
             if let result = self.result {
                 target?.vm = ValidationResultViewModel(validationResult: result)
+            }
+            if let error = self.error {
+                target?.vm = ValidationErrorViewModel(error: error)
             }
         default:
             break
@@ -44,8 +50,8 @@ class ScanViewController: UIViewController {
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
-                    print(error)
-                    self.startScan()
+                    self.error = error
+                    self.performSegue(withIdentifier: "showResult", sender: nil)
                 }
             }
         }

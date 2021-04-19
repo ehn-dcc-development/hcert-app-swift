@@ -9,7 +9,7 @@ import UIKit
 import ValidationCore
 
 class ValidationResultViewController: UITableViewController {
-    var vm : ValidationResultViewModel?
+    var vm : ResultViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()

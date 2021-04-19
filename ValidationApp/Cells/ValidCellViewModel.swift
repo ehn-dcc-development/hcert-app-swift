@@ -17,8 +17,15 @@ struct ValidCellViewModel : CellViewModel {
             return "COSE is \(!isValid ? "NOT " : "")VALID"
         }
     }
+    let errorDescription : String?
     
     init(from result: ValidationResult) {
         self.isValid = result.isValid
+        self.errorDescription = nil
+    }
+    
+    init(from error: ValidationError) {
+        self.isValid = false
+        self.errorDescription = error.message
     }
 }
