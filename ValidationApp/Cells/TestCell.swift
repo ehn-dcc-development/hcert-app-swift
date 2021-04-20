@@ -9,8 +9,6 @@ import UIKit
 
 class TestCell: UITableViewCell {
     @IBOutlet weak var diseaseLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var manufacturerLabel: UILabel!
     @IBOutlet weak var sampleOriginLabel: UILabel!
     @IBOutlet weak var timestampSampleLabel: UILabel!
@@ -23,8 +21,6 @@ class TestCell: UITableViewCell {
     
     func setup(with vm: TestCellViewModel?) {
         diseaseLabel.text = vm?.disease ?? placeholder
-        typeLabel.text = vm?.type ?? placeholder
-        nameLabel.text = vm?.name ?? placeholder
         manufacturerLabel.text = vm?.manufacturer ?? placeholder
         sampleOriginLabel.text = vm?.sampleOrigin ?? placeholder
         timestampSampleLabel.text = vm?.timestampSample ?? placeholder

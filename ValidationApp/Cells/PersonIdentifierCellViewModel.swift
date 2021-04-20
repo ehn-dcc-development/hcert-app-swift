@@ -13,9 +13,11 @@ struct PersonIdentifierCellViewModel : CellViewModel {
     
     let system : String?
     let value : String?
+    let country : String?
     
     init(from personIdentifier: Identifier?){
         system = personIdentifier?.system
         value = personIdentifier?.value
+        country = personIdentifier?.country
     }
 }

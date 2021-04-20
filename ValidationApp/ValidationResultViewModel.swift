@@ -18,7 +18,7 @@ struct ValidationResultViewModel : ResultViewModel {
     init(validationResult: ValidationResult) {
         let validModel = ValidCellViewModel(from: validationResult)
         let personModel = PersonCellViewModel(from: validationResult)
-        let personIdentifiers = validationResult.payload.person?.identifier?.compactMap { PersonIdentifierCellViewModel(from: $0) }
+        let personIdentifiers = validationResult.payload.person.identifier?.compactMap { PersonIdentifierCellViewModel(from: $0) }
         var models : [CellViewModel?] = [validModel,
                       personModel]
         if let personIdentifiers = personIdentifiers {
@@ -38,6 +38,9 @@ struct ValidationResultViewModel : ResultViewModel {
             models.append(contentsOf: testModels)
         }
         models.append(CertificateMetadataCellViewModel(from: validationResult))
+        
+        models.append(MetainfoCellViewModel(from: validationResult))
+
         cellViewModels = models.compactMap {$0}
     }
 }

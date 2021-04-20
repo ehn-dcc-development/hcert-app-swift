@@ -12,8 +12,6 @@ struct TestCellViewModel : CellViewModel {
     var identifier = "TestCell"
     
     let disease: String?
-    let type: String?
-    let name: String?
     let manufacturer: String?
     let sampleOrigin: String?
     let timestampSample: String?
@@ -24,8 +22,6 @@ struct TestCellViewModel : CellViewModel {
 
     init(from testResult: Test) {
         disease = testResult.disease
-        type = testResult.type
-        name = testResult.name
         manufacturer = testResult.manufacturer
         sampleOrigin = testResult.sampleOrigin
         timestampSample = testResult.timestampSample

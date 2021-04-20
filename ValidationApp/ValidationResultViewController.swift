@@ -46,6 +46,8 @@ class ValidationResultViewController: UITableViewController {
             certificateMetadataCell.setup(with: item as? CertificateMetadataCellViewModel)
         case let personIdentifierCell as PersonIdentifierCell:
             personIdentifierCell.setup(with: item as? PersonIdentifierCellViewModel)
+        case let metainfoCell as MetainfoCell:
+            metainfoCell.setup(with: item as? MetainfoCellViewModel)
         default:
             break
         }

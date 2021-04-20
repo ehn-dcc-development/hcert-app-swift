@@ -30,6 +30,8 @@
 		876B11FE2624BA0F0086820C /* PersonIdentifierCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11FD2624BA0F0086820C /* PersonIdentifierCellViewModel.swift */; };
 		8796C26B261D9EF300BAB830 /* ValidationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C26A261D9EF300BAB830 /* ValidationAppTests.swift */; };
 		8796C276261D9EF300BAB830 /* ValidationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C275261D9EF300BAB830 /* ValidationAppUITests.swift */; };
+		879F9BCD262EEB1800A3E3CC /* MetainfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F9BCC262EEB1800A3E3CC /* MetainfoCellViewModel.swift */; };
+		879F9BD2262EEBE900A3E3CC /* MetainfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F9BD1262EEBE900A3E3CC /* MetainfoCell.swift */; };
 		87B2AD7D262731FA000993DD /* ValidationCore in Frameworks */ = {isa = PBXBuildFile; productRef = 87B2AD7C262731FA000993DD /* ValidationCore */; };
 		87FE88B3262487D6003D9E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE88B2262487D6003D9E8E /* Main.storyboard */; };
 		87FE88BB26248B06003D9E8E /* ValidationResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE88BA26248B06003D9E8E /* ValidationResult.storyboard */; };
@@ -84,6 +86,8 @@
 		8796C275261D9EF300BAB830 /* ValidationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAppUITests.swift; sourceTree = "<group>"; };
 		8796C277261D9EF300BAB830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8796C286261DA15900BAB830 /* ValidationCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ValidationCore; path = ../ValidationCore; sourceTree = "<group>"; };
+		879F9BCC262EEB1800A3E3CC /* MetainfoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetainfoCellViewModel.swift; sourceTree = "<group>"; };
+		879F9BD1262EEBE900A3E3CC /* MetainfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetainfoCell.swift; sourceTree = "<group>"; };
 		87FE88B2262487D6003D9E8E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		87FE88BA26248B06003D9E8E /* ValidationResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ValidationResult.storyboard; sourceTree = "<group>"; };
 		87FE88BF26248B48003D9E8E /* ValidationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResultViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 			children = (
 				876B11A2262495930086820C /* ValidCell.swift */,
 				876B11D7262498A70086820C /* ValidCellViewModel.swift */,
+				879F9BCC262EEB1800A3E3CC /* MetainfoCellViewModel.swift */,
+				879F9BD1262EEBE900A3E3CC /* MetainfoCell.swift */,
 				876B11AB262495B10086820C /* PersonCell.swift */,
 				876B11DF26249E440086820C /* PersonCellViewModel.swift */,
 				876B11B0262495C20086820C /* VaccinationCell.swift */,
@@ -342,6 +348,7 @@
 				876B11E026249E440086820C /* PersonCellViewModel.swift in Sources */,
 				876B11A3262495930086820C /* ValidCell.swift in Sources */,
 				876B11D8262498A70086820C /* ValidCellViewModel.swift in Sources */,
+				879F9BD2262EEBE900A3E3CC /* MetainfoCell.swift in Sources */,
 				876B11CE262497E70086820C /* ValidationResultViewModel.swift in Sources */,
 				876B11C0262495FD0086820C /* CertificateMetadataCell.swift in Sources */,
 				876B11FE2624BA0F0086820C /* PersonIdentifierCellViewModel.swift in Sources */,
@@ -349,6 +356,7 @@
 				876B11E526249F010086820C /* VaccinationCellViewModel.swift in Sources */,
 				876B11F42624A1AF0086820C /* CertificateMetadataCellViewModel.swift in Sources */,
 				876B11EA26249F850086820C /* PastInfectionCellViewModel.swift in Sources */,
+				879F9BCD262EEB1800A3E3CC /* MetainfoCellViewModel.swift in Sources */,
 				87FE88C026248B48003D9E8E /* ValidationResultViewController.swift in Sources */,
 				876B11D32624984B0086820C /* CellViewModel.swift in Sources */,
 				870DB2E8262486F400221D0B /* SceneDelegate.swift in Sources */,
@@ -511,7 +519,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9CYHJNG644;
 				ENABLE_PREVIEWS = YES;
@@ -521,7 +529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = at.asitplus.ValidationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -539,7 +547,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9CYHJNG644;
 				ENABLE_PREVIEWS = YES;
@@ -549,7 +557,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = at.asitplus.ValidationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
