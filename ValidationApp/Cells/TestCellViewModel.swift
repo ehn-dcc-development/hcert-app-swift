@@ -12,22 +12,28 @@ struct TestCellViewModel : CellViewModel {
     var identifier = "TestCell"
     
     let disease: String?
+    let type: String?
+    let testName: String?
     let manufacturer: String?
-    let sampleOrigin: String?
     let timestampSample: String?
     let timestampResult: String?
     let result: String?
-    let facility: String?
+    let testCenter: String?
     let country: String?
+    let certIssuer: String?
+    let certIdentifier: String?
 
     init(from testResult: Test) {
         disease = testResult.disease
+        type = testResult.type
+        testName = testResult.testName
         manufacturer = testResult.manufacturer
-        sampleOrigin = testResult.sampleOrigin
-        timestampSample = testResult.timestampSample
-        timestampResult = testResult.timestampResult
+        timestampSample = "\(testResult.timestampSample)"
+        timestampResult = "\(testResult.timestampResult ?? 0)"
         result = testResult.result
-        facility = testResult.facility
+        testCenter = testResult.testCenter
         country = testResult.country
+        certIssuer = testResult.certificateIssuer
+        certIdentifier = testResult.certificateIdentifier
     }
 }

@@ -11,34 +11,33 @@ import ValidationCore
 struct VaccinationCellViewModel : CellViewModel {
     var identifier = "VaccinationCell"
     
-    let disease: String?
-    let vaccine: String?
-    let medicinialProduct: String?
-    let marketingAuthorizationHolder: String?
-    private let number: UInt64?
+    let disease: String
+    let vaccine: String
+    let medicinialProduct: String
+    let marketingAuthorizationHolder: String
+    private let doseNumber: UInt64
     var vaccinationNumber : String? {
         get {
-            guard let number = number else { return nil }
-            return "\(number) of \(numberOf ?? 0)"
+            return "\(doseNumber) of \(totalDoses)"
         }
     }
     
-    private let numberOf: UInt64?
-    let lotNumber: String?
-    let vaccinationDate: String?
-    let administeringCentre: String?
-    let country: String?
-    
+    private let totalDoses: UInt64
+    let vaccinationDate: String
+    let country: String
+    let certificateIssuer: String
+    let certificateIdentifier: String
+ 
     init(from vaccination: Vaccination) {
         disease = vaccination.disease
         vaccine = vaccination.vaccine
         medicinialProduct = vaccination.medicinialProduct
         marketingAuthorizationHolder = vaccination.marketingAuthorizationHolder
-        number = vaccination.number
-        numberOf = vaccination.numberOf
-        lotNumber = vaccination.lotNumber
+        doseNumber = vaccination.doseNumber
+        totalDoses = vaccination.totalDoses
         vaccinationDate = vaccination.vaccinationDate
-        administeringCentre = vaccination.administeringCenter
         country = vaccination.country
+        certificateIssuer = vaccination.certificateIssuer
+        certificateIdentifier = vaccination.certificateIdentifier
     }
 }

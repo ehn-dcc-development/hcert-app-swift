@@ -13,10 +13,10 @@ class VaccinationCell: UITableViewCell {
     @IBOutlet weak var medicinialProductLabel: UILabel!
     @IBOutlet weak var marketingAuthLabel: UILabel!
     @IBOutlet weak var vaccinationNumberLabel: UILabel!
-    @IBOutlet weak var lotNumberLabel: UILabel!
     @IBOutlet weak var vaccinationDateLabel: UILabel!
-    @IBOutlet weak var administeringCenterLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var certIssuerLabel: UILabel!
+    @IBOutlet weak var certIdentifierLabel: UILabel!
     
     var vm : VaccinationCellViewModel?
     
@@ -26,9 +26,9 @@ class VaccinationCell: UITableViewCell {
         medicinialProductLabel.text = vm?.medicinialProduct ?? placeholder
         marketingAuthLabel.text = vm?.marketingAuthorizationHolder ?? placeholder
         vaccinationNumberLabel.text = vm?.vaccinationNumber ?? placeholder
-        lotNumberLabel.text = vm?.lotNumber ?? placeholder
         vaccinationDateLabel.text = vm?.vaccinationDate ?? placeholder
-        administeringCenterLabel.text = vm?.administeringCentre ?? placeholder
         countryLabel.text = vm?.country ?? placeholder
+        certIssuerLabel.text = vm?.certificateIssuer ?? placeholder
+        certIdentifierLabel.text = vm?.certificateIdentifier ?? placeholder
     }
 }

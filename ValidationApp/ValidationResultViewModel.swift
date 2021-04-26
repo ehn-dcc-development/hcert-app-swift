@@ -18,12 +18,8 @@ struct ValidationResultViewModel : ResultViewModel {
     init(validationResult: ValidationResult) {
         let validModel = ValidCellViewModel(from: validationResult)
         let personModel = PersonCellViewModel(from: validationResult)
-        let personIdentifiers = validationResult.payload.person.identifier?.compactMap { PersonIdentifierCellViewModel(from: $0) }
         var models : [CellViewModel?] = [validModel,
                       personModel]
-        if let personIdentifiers = personIdentifiers {
-            models.append(contentsOf: personIdentifiers)
-        }
         let vaccinationModels = validationResult.payload.vaccinations?.compactMap { VaccinationCellViewModel(from: $0) }
         if let vaccinationModels = vaccinationModels {
             models.append(contentsOf: vaccinationModels)
@@ -37,8 +33,6 @@ struct ValidationResultViewModel : ResultViewModel {
         if let testModels = testModels {
             models.append(contentsOf: testModels)
         }
-        models.append(CertificateMetadataCellViewModel(from: validationResult))
-        
         models.append(MetainfoCellViewModel(from: validationResult))
 
         cellViewModels = models.compactMap {$0}

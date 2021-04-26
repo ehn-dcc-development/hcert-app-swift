@@ -17,7 +17,6 @@
 		876B11B1262495C20086820C /* VaccinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11B0262495C20086820C /* VaccinationCell.swift */; };
 		876B11B6262495DC0086820C /* PastInfectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11B5262495DC0086820C /* PastInfectionCell.swift */; };
 		876B11BB262495ED0086820C /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11BA262495ED0086820C /* TestCell.swift */; };
-		876B11C0262495FD0086820C /* CertificateMetadataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11BF262495FD0086820C /* CertificateMetadataCell.swift */; };
 		876B11CE262497E70086820C /* ValidationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11CD262497E70086820C /* ValidationResultViewModel.swift */; };
 		876B11D32624984B0086820C /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11D22624984B0086820C /* CellViewModel.swift */; };
 		876B11D8262498A70086820C /* ValidCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11D7262498A70086820C /* ValidCellViewModel.swift */; };
@@ -25,9 +24,6 @@
 		876B11E526249F010086820C /* VaccinationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11E426249F010086820C /* VaccinationCellViewModel.swift */; };
 		876B11EA26249F850086820C /* PastInfectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11E926249F850086820C /* PastInfectionCellViewModel.swift */; };
 		876B11EF2624A1340086820C /* TestCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11EE2624A1340086820C /* TestCellViewModel.swift */; };
-		876B11F42624A1AF0086820C /* CertificateMetadataCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11F32624A1AF0086820C /* CertificateMetadataCellViewModel.swift */; };
-		876B11F92624B9410086820C /* PersonIdentifierCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11F82624B9410086820C /* PersonIdentifierCell.swift */; };
-		876B11FE2624BA0F0086820C /* PersonIdentifierCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11FD2624BA0F0086820C /* PersonIdentifierCellViewModel.swift */; };
 		8796C26B261D9EF300BAB830 /* ValidationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C26A261D9EF300BAB830 /* ValidationAppTests.swift */; };
 		8796C276261D9EF300BAB830 /* ValidationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C275261D9EF300BAB830 /* ValidationAppUITests.swift */; };
 		879F9BCD262EEB1800A3E3CC /* MetainfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F9BCC262EEB1800A3E3CC /* MetainfoCellViewModel.swift */; };
@@ -67,7 +63,6 @@
 		876B11B0262495C20086820C /* VaccinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCell.swift; sourceTree = "<group>"; };
 		876B11B5262495DC0086820C /* PastInfectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastInfectionCell.swift; sourceTree = "<group>"; };
 		876B11BA262495ED0086820C /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
-		876B11BF262495FD0086820C /* CertificateMetadataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateMetadataCell.swift; sourceTree = "<group>"; };
 		876B11CD262497E70086820C /* ValidationResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResultViewModel.swift; sourceTree = "<group>"; };
 		876B11D22624984B0086820C /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 		876B11D7262498A70086820C /* ValidCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidCellViewModel.swift; sourceTree = "<group>"; };
@@ -75,9 +70,6 @@
 		876B11E426249F010086820C /* VaccinationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCellViewModel.swift; sourceTree = "<group>"; };
 		876B11E926249F850086820C /* PastInfectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastInfectionCellViewModel.swift; sourceTree = "<group>"; };
 		876B11EE2624A1340086820C /* TestCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCellViewModel.swift; sourceTree = "<group>"; };
-		876B11F32624A1AF0086820C /* CertificateMetadataCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateMetadataCellViewModel.swift; sourceTree = "<group>"; };
-		876B11F82624B9410086820C /* PersonIdentifierCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonIdentifierCell.swift; sourceTree = "<group>"; };
-		876B11FD2624BA0F0086820C /* PersonIdentifierCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonIdentifierCellViewModel.swift; sourceTree = "<group>"; };
 		8796C255261D9EF100BAB830 /* ValidationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8796C266261D9EF300BAB830 /* ValidationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8796C26A261D9EF300BAB830 /* ValidationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAppTests.swift; sourceTree = "<group>"; };
@@ -133,12 +125,8 @@
 				876B11B5262495DC0086820C /* PastInfectionCell.swift */,
 				876B11E926249F850086820C /* PastInfectionCellViewModel.swift */,
 				876B11BA262495ED0086820C /* TestCell.swift */,
-				876B11BF262495FD0086820C /* CertificateMetadataCell.swift */,
 				876B11D22624984B0086820C /* CellViewModel.swift */,
 				876B11EE2624A1340086820C /* TestCellViewModel.swift */,
-				876B11F32624A1AF0086820C /* CertificateMetadataCellViewModel.swift */,
-				876B11F82624B9410086820C /* PersonIdentifierCell.swift */,
-				876B11FD2624BA0F0086820C /* PersonIdentifierCellViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -338,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				876B11F92624B9410086820C /* PersonIdentifierCell.swift in Sources */,
 				876B11AC262495B10086820C /* PersonCell.swift in Sources */,
 				876B11EF2624A1340086820C /* TestCellViewModel.swift in Sources */,
 				876B11B6262495DC0086820C /* PastInfectionCell.swift in Sources */,
@@ -350,11 +337,8 @@
 				876B11D8262498A70086820C /* ValidCellViewModel.swift in Sources */,
 				879F9BD2262EEBE900A3E3CC /* MetainfoCell.swift in Sources */,
 				876B11CE262497E70086820C /* ValidationResultViewModel.swift in Sources */,
-				876B11C0262495FD0086820C /* CertificateMetadataCell.swift in Sources */,
-				876B11FE2624BA0F0086820C /* PersonIdentifierCellViewModel.swift in Sources */,
 				876B11B1262495C20086820C /* VaccinationCell.swift in Sources */,
 				876B11E526249F010086820C /* VaccinationCellViewModel.swift in Sources */,
-				876B11F42624A1AF0086820C /* CertificateMetadataCellViewModel.swift in Sources */,
 				876B11EA26249F850086820C /* PastInfectionCellViewModel.swift in Sources */,
 				879F9BCD262EEB1800A3E3CC /* MetainfoCellViewModel.swift in Sources */,
 				87FE88C026248B48003D9E8E /* ValidationResultViewController.swift in Sources */,
@@ -519,7 +503,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9CYHJNG644;
 				ENABLE_PREVIEWS = YES;
@@ -529,7 +513,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.3;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = at.asitplus.ValidationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -547,7 +531,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9CYHJNG644;
 				ENABLE_PREVIEWS = YES;
@@ -557,7 +541,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.3;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = at.asitplus.ValidationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

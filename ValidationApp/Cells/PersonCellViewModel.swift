@@ -13,13 +13,15 @@ struct PersonCellViewModel : CellViewModel {
     
     let name : String?
     let birthDate : String?
-    let gender : String?
+    let standardizedGivenName : String?
+    let standardizedFamilyName : String
 
     init?(from result: ValidationResult) {
         let person = result.payload.person
-        name = "\(person.givenName) \(person.familyName ?? "")"
-        birthDate = person.birthDate
-        gender = person.gender
+        name = "\(person.givenName ?? "") \(person.familyName ?? "")"
+        birthDate = result.payload.dateOfBirth
+        standardizedGivenName = person.standardizedGivenName
+        standardizedFamilyName = person.standardizedFamilyName
     }
  
 }
