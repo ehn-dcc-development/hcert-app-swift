@@ -11,6 +11,7 @@ import ValidationCore
 class ScanViewController: UIViewController {
     var result : ValidationResult?
     var error : ValidationError?
+    var validationCore = ValidationCore()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,6 @@ class ScanViewController: UIViewController {
     }
 
     private func startScan() {
-        var validationCore = ValidationCore()
         validationCore.validateQrCode(self) { result in
             
             switch(result) {

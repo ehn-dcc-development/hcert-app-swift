@@ -26,6 +26,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Required to scan QR code</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>FaceID can be used to decrypt Trustlist</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
