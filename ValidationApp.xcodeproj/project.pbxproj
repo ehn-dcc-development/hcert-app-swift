@@ -26,9 +26,9 @@
 		876B11EF2624A1340086820C /* TestCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11EE2624A1340086820C /* TestCellViewModel.swift */; };
 		8796C26B261D9EF300BAB830 /* ValidationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C26A261D9EF300BAB830 /* ValidationAppTests.swift */; };
 		8796C276261D9EF300BAB830 /* ValidationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8796C275261D9EF300BAB830 /* ValidationAppUITests.swift */; };
+		8799429E263BE96F002DEBE3 /* ValidationCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8799429D263BE96F002DEBE3 /* ValidationCore */; };
 		879F9BCD262EEB1800A3E3CC /* MetainfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F9BCC262EEB1800A3E3CC /* MetainfoCellViewModel.swift */; };
 		879F9BD2262EEBE900A3E3CC /* MetainfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879F9BD1262EEBE900A3E3CC /* MetainfoCell.swift */; };
-		87B2AD7D262731FA000993DD /* ValidationCore in Frameworks */ = {isa = PBXBuildFile; productRef = 87B2AD7C262731FA000993DD /* ValidationCore */; };
 		87FE88B3262487D6003D9E8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE88B2262487D6003D9E8E /* Main.storyboard */; };
 		87FE88BB26248B06003D9E8E /* ValidationResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FE88BA26248B06003D9E8E /* ValidationResult.storyboard */; };
 		87FE88C026248B48003D9E8E /* ValidationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FE88BF26248B48003D9E8E /* ValidationResultViewController.swift */; };
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B2AD7D262731FA000993DD /* ValidationCore in Frameworks */,
+				8799429E263BE96F002DEBE3 /* ValidationCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +205,7 @@
 			);
 			name = ValidationApp;
 			packageProductDependencies = (
-				87B2AD7C262731FA000993DD /* ValidationCore */,
+				8799429D263BE96F002DEBE3 /* ValidationCore */,
 			);
 			productName = ValidationApp;
 			productReference = 8796C255261D9EF100BAB830 /* ValidationApp.app */;
@@ -280,7 +280,7 @@
 			);
 			mainGroup = 8796C24C261D9EF100BAB830;
 			packageReferences = (
-				87B2AD7B262731FA000993DD /* XCRemoteSwiftPackageReference "ValidationCore" */,
+				8799429C263BE96F002DEBE3 /* XCRemoteSwiftPackageReference "ValidationCore" */,
 			);
 			productRefGroup = 8796C256261D9EF100BAB830 /* Products */;
 			projectDirPath = "";
@@ -676,7 +676,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		87B2AD7B262731FA000993DD /* XCRemoteSwiftPackageReference "ValidationCore" */ = {
+		8799429C263BE96F002DEBE3 /* XCRemoteSwiftPackageReference "ValidationCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ehn-digital-green-development/ValidationCore";
 			requirement = {
@@ -687,9 +687,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		87B2AD7C262731FA000993DD /* ValidationCore */ = {
+		8799429D263BE96F002DEBE3 /* ValidationCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87B2AD7B262731FA000993DD /* XCRemoteSwiftPackageReference "ValidationCore" */;
+			package = 8799429C263BE96F002DEBE3 /* XCRemoteSwiftPackageReference "ValidationCore" */;
 			productName = ValidationCore;
 		};
 /* End XCSwiftPackageProductDependency section */

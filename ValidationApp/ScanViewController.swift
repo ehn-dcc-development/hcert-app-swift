@@ -13,16 +13,37 @@ class ScanViewController: UIViewController {
     var error : ValidationError?
     var validationCore = ValidationCore()
 
+    @IBOutlet weak var qrView: UIView!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var updateTrustlistButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "EHN QR Code Scanner"
+        updateTrustlistButton.layer.cornerRadius = 5
+        updateTrustlistButton.backgroundColor = UIColor.systemBlue
+        updateTrustlistButton.setTitleColor(UIColor.white, for: .normal)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         result = nil
         error = nil
+        errorLabel.isHidden = true
         startScan()
    }
+    @IBAction func onUpdateTrustlist(_ sender: Any) {
+        updateTrustlistButton.isEnabled = false
+        errorLabel.isHidden = true
+        validationCore.updateTrustlist() { error in
+            DispatchQueue.main.async {
+                if let errorMessage = error?.message {
+                    self.errorLabel.text = errorMessage
+                    self.errorLabel.isHidden = false
+                }
+                self.updateTrustlistButton.isEnabled = true
+            }
+       }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
@@ -40,8 +61,7 @@ class ScanViewController: UIViewController {
     }
 
     private func startScan() {
-        validationCore.validateQrCode(self) { result in
-            
+        validationCore.validateQrCode(qrView) { result in
             switch(result) {
             case .success(let validationResult):
                 self.result = validationResult
@@ -56,6 +76,9 @@ class ScanViewController: UIViewController {
             }
         }
     }
+    
+    private func show(errorMessage: String?) {
+   }
 
 }
 

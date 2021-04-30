@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AtG-MP-3vA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AtG-MP-3vA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,11 +15,57 @@
                     <view key="view" contentMode="scaleToFill" id="jhv-Rm-usQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lE6-Lp-zNT">
+                                <rect key="frame" x="10" y="532" width="394" height="40"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igI-N4-Twq" userLabel="Error Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inU-Ch-K4l">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="PcY-Jg-rig"/>
+                                            <constraint firstAttribute="height" constant="40" id="eXO-WY-UUl"/>
+                                        </constraints>
+                                        <state key="normal" title="Force Trustlist Update"/>
+                                        <connections>
+                                            <action selector="onUpdateTrustlist:" destination="dvk-hs-3xI" eventType="touchUpInside" id="jY3-lK-Doe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="igI-N4-Twq" firstAttribute="leading" secondItem="lE6-Lp-zNT" secondAttribute="leading" id="3CG-tG-as7"/>
+                                    <constraint firstAttribute="trailing" secondItem="igI-N4-Twq" secondAttribute="trailing" id="gvR-7m-WO3"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np3-xJ-geS">
+                                <rect key="frame" x="10" y="98" width="394" height="394"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="np3-xJ-geS" secondAttribute="height" multiplier="1:1" id="TXo-FQ-xBM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8Zj-qp-l0h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="np3-xJ-geS" firstAttribute="top" secondItem="8Zj-qp-l0h" secondAttribute="top" constant="10" id="0HY-J3-dHx"/>
+                            <constraint firstItem="lE6-Lp-zNT" firstAttribute="leading" secondItem="8Zj-qp-l0h" secondAttribute="leading" constant="10" id="3Em-0I-T0K"/>
+                            <constraint firstItem="8Zj-qp-l0h" firstAttribute="trailing" secondItem="np3-xJ-geS" secondAttribute="trailing" constant="10" id="Quj-Tn-T4y"/>
+                            <constraint firstItem="8Zj-qp-l0h" firstAttribute="trailing" secondItem="lE6-Lp-zNT" secondAttribute="trailing" constant="10" id="SRW-Xz-vMO"/>
+                            <constraint firstItem="lE6-Lp-zNT" firstAttribute="top" secondItem="np3-xJ-geS" secondAttribute="bottom" constant="40" id="dCv-NZ-UYD"/>
+                            <constraint firstItem="np3-xJ-geS" firstAttribute="leading" secondItem="8Zj-qp-l0h" secondAttribute="leading" constant="10" id="row-0A-hKm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RKC-56-joT"/>
                     <connections>
+                        <outlet property="errorLabel" destination="igI-N4-Twq" id="qBh-Pd-OTq"/>
+                        <outlet property="qrView" destination="np3-xJ-geS" id="yrp-oR-PMA"/>
+                        <outlet property="updateTrustlistButton" destination="inU-Ch-K4l" id="RJs-II-Omu"/>
                         <segue destination="qgm-d8-Mnc" kind="show" identifier="showResult" id="o5S-QP-Qzm"/>
                     </connections>
                 </viewController>
