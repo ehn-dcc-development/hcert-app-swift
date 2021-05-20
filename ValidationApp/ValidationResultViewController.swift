@@ -38,8 +38,8 @@ class ValidationResultViewController: UITableViewController {
             personCell.setup(with: item as? PersonCellViewModel)
         case let vaccinationCell as VaccinationCell:
             vaccinationCell.setup(with: item as? VaccinationCellViewModel)
-        case let pastInfectionCell as PastInfectionCell:
-            pastInfectionCell.setup(with: item as? PastInfectionCellViewModel)
+        case let pastInfectionCell as RecoveryCell:
+            pastInfectionCell.setup(with: item as? RecoveryCellViewModel)
         case let testCell as TestCell:
             testCell.setup(with: item as? TestCellViewModel)
         case let metainfoCell as MetainfoCell:

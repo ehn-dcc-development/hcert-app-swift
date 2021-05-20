@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PastInfectionCell: UITableViewCell {
+class RecoveryCell: UITableViewCell {
     @IBOutlet weak var diseaseLabel: UILabel!
     @IBOutlet weak var dateFirstPositiveLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
@@ -16,9 +16,9 @@ class PastInfectionCell: UITableViewCell {
     @IBOutlet weak var certIssuerLabel: UILabel!
     @IBOutlet weak var certIdentifierLabel: UILabel!
     
-    var vm : PastInfectionCellViewModel?
+    var vm : RecoveryCellViewModel?
     
-    func setup(with vm: PastInfectionCellViewModel?) {
+    func setup(with vm: RecoveryCellViewModel?) {
         diseaseLabel.text = vm?.disease ?? placeholder
         dateFirstPositiveLabel.text = vm?.dateFirstPositiveTest ?? placeholder
         countryLabel.text = vm?.country ?? placeholder

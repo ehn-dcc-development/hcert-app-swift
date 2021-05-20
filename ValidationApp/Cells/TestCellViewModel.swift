@@ -25,12 +25,12 @@ struct TestCellViewModel : CellViewModel {
 
     init(from testResult: Test) {
         disease = testResult.disease
-        type = testResult.type
+        type = testResult.type.humanReadable()
         testName = testResult.testName
-        manufacturer = testResult.manufacturer
-        timestampSample = "\(testResult.timestampSample)"
-        timestampResult = "\(testResult.timestampResult ?? 0)"
-        result = testResult.result
+        manufacturer = testResult.manufacturer?.humanReadable()
+        timestampSample = testResult.timestampSample
+        timestampResult = testResult.timestampResult
+        result = testResult.result.humanReadable()
         testCenter = testResult.testCenter
         country = testResult.country
         certIssuer = testResult.certificateIssuer
