@@ -93,11 +93,11 @@
       },
       {
         "package": "SwiftCBOR",
-        "repositoryURL": "https://github.com/unrelentingtech/SwiftCBOR",
+        "repositoryURL": "https://github.com/PaulBallmann/SwiftCBOR",
         "state": {
-          "branch": null,
-          "revision": "668c26fc3373d5f1bccbaad7665ca6048797e324",
-          "version": "0.4.3"
+          "branch": "fix/zero-tag",
+          "revision": "9210abf60c16ab8be8e106cc126d6daa6931e2c0",
+          "version": null
         }
       }
     ]

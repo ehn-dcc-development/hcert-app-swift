@@ -24,7 +24,7 @@ struct TestCellViewModel : CellViewModel {
     let certIdentifier: String?
 
     init(from testResult: Test) {
-        disease = testResult.disease
+        disease = testResult.disease.humanReadable()
         type = testResult.type.humanReadable()
         testName = testResult.testName
         manufacturer = testResult.manufacturer?.humanReadable()
