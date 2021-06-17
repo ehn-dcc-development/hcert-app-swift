@@ -21,7 +21,7 @@ struct ValidCellViewModel : CellViewModel {
     
     init(from result: ValidationResult) {
         self.isValid = result.isValid
-        self.errorDescription = nil
+        self.errorDescription = result.error?.message
     }
     
     init(from error: ValidationError) {

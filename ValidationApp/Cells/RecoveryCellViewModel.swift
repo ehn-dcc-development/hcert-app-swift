@@ -21,7 +21,7 @@ struct RecoveryCellViewModel : CellViewModel {
  
     
     init(from recovery: Recovery) {
-        disease = recovery.disease.humanReadable()
+        disease = DiseaseAgentTargeted(rawValue: recovery.disease)?.humanReadable() ?? recovery.disease
         dateFirstPositiveTest = recovery.dateFirstPositiveTest
         country = recovery.countryOfTest
         validFrom = recovery.validFrom

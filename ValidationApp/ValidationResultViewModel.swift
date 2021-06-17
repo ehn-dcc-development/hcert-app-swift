@@ -20,15 +20,15 @@ struct ValidationResultViewModel : ResultViewModel {
         let personModel = PersonCellViewModel(from: validationResult)
         var models : [CellViewModel?] = [validModel,
                       personModel]
-        if let vaccinationModels = validationResult.payload.vaccinations?.compactMap({ VaccinationCellViewModel(from: $0) }) {
+        if let vaccinationModels = validationResult.greenpass?.vaccinations?.compactMap({ VaccinationCellViewModel(from: $0) }) {
             models.append(contentsOf: vaccinationModels)
         }
         
-        if let recoveryModels = validationResult.payload.recovery?.compactMap({ RecoveryCellViewModel(from: $0) }) {
+        if let recoveryModels = validationResult.greenpass?.recovery?.compactMap({ RecoveryCellViewModel(from: $0) }) {
             models.append(contentsOf: recoveryModels)
         }
 
-        if let testModels = validationResult.payload.tests?.compactMap({ TestCellViewModel(from: $0) }) {
+        if let testModels = validationResult.greenpass?.tests?.compactMap({ TestCellViewModel(from: $0) }) {
             models.append(contentsOf: testModels)
         }
         models.append(MetainfoCellViewModel(from: validationResult))

@@ -12,6 +12,7 @@
 		870DB2E9262486F400221D0B /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 870DB2E3262486F400221D0B /* Base.lproj */; };
 		870DB2EA262486F400221D0B /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DB2E4262486F400221D0B /* ScanViewController.swift */; };
 		870DB2EB262486F400221D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DB2E5262486F400221D0B /* AppDelegate.swift */; };
+		873131C8267B6AB7000F1D71 /* DGCValueSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873131C7267B6AB7000F1D71 /* DGCValueSets.swift */; };
 		876B11A3262495930086820C /* ValidCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11A2262495930086820C /* ValidCell.swift */; };
 		876B11AC262495B10086820C /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11AB262495B10086820C /* PersonCell.swift */; };
 		876B11B1262495C20086820C /* VaccinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11B0262495C20086820C /* VaccinationCell.swift */; };
@@ -58,6 +59,7 @@
 		870DB2E3262486F400221D0B /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		870DB2E4262486F400221D0B /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		870DB2E5262486F400221D0B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		873131C7267B6AB7000F1D71 /* DGCValueSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCValueSets.swift; sourceTree = "<group>"; };
 		876B11A2262495930086820C /* ValidCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidCell.swift; sourceTree = "<group>"; };
 		876B11AB262495B10086820C /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		876B11B0262495C20086820C /* VaccinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCell.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				87FE88BA26248B06003D9E8E /* ValidationResult.storyboard */,
 				87FE88BF26248B48003D9E8E /* ValidationResultViewController.swift */,
 				876B11CD262497E70086820C /* ValidationResultViewModel.swift */,
+				873131C7267B6AB7000F1D71 /* DGCValueSets.swift */,
 				876B11A72624959B0086820C /* Cells */,
 			);
 			path = ValidationApp;
@@ -333,6 +336,7 @@
 				870DB2EA262486F400221D0B /* ScanViewController.swift in Sources */,
 				876B11BB262495ED0086820C /* TestCell.swift in Sources */,
 				876B11E026249E440086820C /* PersonCellViewModel.swift in Sources */,
+				873131C8267B6AB7000F1D71 /* DGCValueSets.swift in Sources */,
 				876B11A3262495930086820C /* ValidCell.swift in Sources */,
 				876B11D8262498A70086820C /* ValidCellViewModel.swift in Sources */,
 				879F9BD2262EEBE900A3E3CC /* MetainfoCell.swift in Sources */,
@@ -498,7 +502,7 @@
 		8796C27B261D9EF300BAB830 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -526,7 +530,7 @@
 		8796C27C261D9EF300BAB830 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";

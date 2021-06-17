@@ -93,10 +93,10 @@
       },
       {
         "package": "SwiftCBOR",
-        "repositoryURL": "https://github.com/PaulBallmann/SwiftCBOR",
+        "repositoryURL": "https://github.com/eu-digital-green-certificates/SwiftCBOR",
         "state": {
-          "branch": "fix/zero-tag",
-          "revision": "9210abf60c16ab8be8e106cc126d6daa6931e2c0",
+          "branch": "master",
+          "revision": "b76024995f6909e4615f943c7a03268fd29778fc",
           "version": null
         }
       }

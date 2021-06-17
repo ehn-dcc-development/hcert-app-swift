@@ -11,9 +11,9 @@ import ValidationCore
 struct MetainfoCellViewModel : CellViewModel {
     var identifier = "MetainfoCell"
     
-    let version : String
+    let version : String?
     
     init(from result: ValidationResult) {
-        self.version = result.payload.version
+        self.version = result.greenpass?.version
     }
 }

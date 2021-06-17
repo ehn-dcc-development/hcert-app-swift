@@ -24,13 +24,13 @@ struct TestCellViewModel : CellViewModel {
     let certIdentifier: String?
 
     init(from testResult: Test) {
-        disease = testResult.disease.humanReadable()
-        type = testResult.type.humanReadable()
+        disease = DiseaseAgentTargeted(rawValue: testResult.disease)?.humanReadable() ?? testResult.disease
+        type = TestType(rawValue: testResult.type)?.humanReadable() ?? testResult.type
         testName = testResult.testName
-        manufacturer = testResult.manufacturer?.humanReadable()
+        manufacturer = TestManufacturer(rawValue: testResult.manufacturer ?? "")?.humanReadable() ?? testResult.manufacturer
         timestampSample = testResult.timestampSample
         timestampResult = testResult.timestampResult
-        result = testResult.result.humanReadable()
+        result = TestResult(rawValue: testResult.result)?.humanReadable() ?? testResult.result
         testCenter = testResult.testCenter
         country = testResult.country
         certIssuer = testResult.certificateIssuer

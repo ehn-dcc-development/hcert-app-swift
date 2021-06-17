@@ -29,10 +29,10 @@ struct VaccinationCellViewModel : CellViewModel {
     let certificateIdentifier: String
  
     init(from vaccination: Vaccination) {
-        disease = vaccination.disease.humanReadable()
-        vaccine = vaccination.vaccine.humanReadable()
-        medicinialProduct = vaccination.medicinialProduct.humanReadable()
-        marketingAuthorizationHolder = vaccination.marketingAuthorizationHolder.humanReadable()
+        disease = DiseaseAgentTargeted(rawValue: vaccination.disease)?.humanReadable() ?? vaccination.disease
+        vaccine = VaccineProphylaxis(rawValue: vaccination.vaccine)?.humanReadable() ?? vaccination.vaccine
+        medicinialProduct = VaccineMedicinialProduct(rawValue: vaccination.medicinialProduct)?.humanReadable() ?? vaccination.medicinialProduct
+        marketingAuthorizationHolder = VaccineManufacturer(rawValue: vaccination.marketingAuthorizationHolder)?.humanReadable() ?? vaccination.marketingAuthorizationHolder
         doseNumber = vaccination.doseNumber
         totalDoses = vaccination.totalDoses
         vaccinationDate = vaccination.vaccinationDate
