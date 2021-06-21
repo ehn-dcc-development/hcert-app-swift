@@ -44,6 +44,8 @@ class ValidationResultViewController: UITableViewController {
             testCell.setup(with: item as? TestCellViewModel)
         case let metainfoCell as MetainfoCell:
             metainfoCell.setup(with: item as? MetainfoCellViewModel)
+        case let debugCell as DebugCell:
+            debugCell.setup(with: item as? DebugCellViewModel)
         default:
             break
         }

@@ -32,6 +32,9 @@ struct ValidationResultViewModel : ResultViewModel {
             models.append(contentsOf: testModels)
         }
         models.append(MetainfoCellViewModel(from: validationResult))
+        if let metaInfo = validationResult.metaInformation {
+            models.append(DebugCellViewModel(from: metaInfo))
+        }
 
         cellViewModels = models.compactMap {$0}
     }

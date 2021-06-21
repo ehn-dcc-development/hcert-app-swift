@@ -1001,6 +1001,124 @@
                                     <outlet property="versionLabel" destination="2Of-vq-ZQg" id="88O-DB-Vc2"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DebugCell" id="gii-Tn-ptW" userLabel="DebugCell" customClass="DebugCell" customModule="ValidationApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="2263" width="414" height="249.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gii-Tn-ptW" id="MZ5-sd-5Ky">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="249.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CWT Issuer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9G-kU-cOE">
+                                            <rect key="frame" x="20" y="10" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="SDb-Dh-GTl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CWT Issuer Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i40-9b-wzS" userLabel="CWT Issuer Label">
+                                            <rect key="frame" x="20" y="36" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="g5r-Oz-Tme"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CWT Expiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0t-dK-n1x">
+                                            <rect key="frame" x="20" y="67" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Xoy-OH-ZOK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CWT Expiration Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF0-VV-dtu">
+                                            <rect key="frame" x="20" y="93" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="3F6-yS-Ugu"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CWT Not Before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2p-z2-AqC">
+                                            <rect key="frame" x="20" y="124" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="ady-Sq-OnK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CWT Not Before Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLZ-JJ-lVe">
+                                            <rect key="frame" x="20" y="150" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="OkQ-wt-jti"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CWT Issued At Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJ5-dr-tOt" userLabel="CWT Issued At Label">
+                                            <rect key="frame" x="20" y="207" width="374" height="21.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="lHH-A0-QPw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CWT Issued At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXI-Wo-tc6" userLabel="CWT Issued At">
+                                            <rect key="frame" x="20" y="181" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="bQC-kH-h4M"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zF0-VV-dtu" firstAttribute="leading" secondItem="MZ5-sd-5Ky" secondAttribute="leadingMargin" id="13I-G8-1mf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zF0-VV-dtu" secondAttribute="trailing" id="4WU-xR-fBH"/>
+                                        <constraint firstItem="k0t-dK-n1x" firstAttribute="leading" secondItem="MZ5-sd-5Ky" secondAttribute="leadingMargin" id="4eA-YA-DFW"/>
+                                        <constraint firstItem="Q9G-kU-cOE" firstAttribute="trailing" secondItem="MZ5-sd-5Ky" secondAttribute="trailingMargin" id="5PT-8O-PFD"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zXI-Wo-tc6" secondAttribute="trailing" id="6yz-T5-vZA"/>
+                                        <constraint firstItem="i40-9b-wzS" firstAttribute="top" secondItem="Q9G-kU-cOE" secondAttribute="bottom" constant="5" id="8G5-Ph-6fN"/>
+                                        <constraint firstItem="zF0-VV-dtu" firstAttribute="top" secondItem="k0t-dK-n1x" secondAttribute="bottom" constant="5" id="E68-EK-482"/>
+                                        <constraint firstItem="MLZ-JJ-lVe" firstAttribute="top" secondItem="g2p-z2-AqC" secondAttribute="bottom" constant="5" id="MUS-pf-TJX"/>
+                                        <constraint firstItem="Q9G-kU-cOE" firstAttribute="top" secondItem="MZ5-sd-5Ky" secondAttribute="top" constant="10" id="Ofk-Ev-uqW"/>
+                                        <constraint firstItem="Q9G-kU-cOE" firstAttribute="leading" secondItem="MZ5-sd-5Ky" secondAttribute="leadingMargin" id="R0a-gk-RMb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="g2p-z2-AqC" secondAttribute="trailing" id="RAc-92-MDO"/>
+                                        <constraint firstItem="MJ5-dr-tOt" firstAttribute="leading" secondItem="MZ5-sd-5Ky" secondAttribute="leadingMargin" id="RYy-6U-NKt"/>
+                                        <constraint firstItem="k0t-dK-n1x" firstAttribute="top" secondItem="i40-9b-wzS" secondAttribute="bottom" constant="10" id="Txi-18-hMZ"/>
+                                        <constraint firstItem="MJ5-dr-tOt" firstAttribute="top" secondItem="zXI-Wo-tc6" secondAttribute="bottom" constant="5" id="VzG-sn-ZYR"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="MLZ-JJ-lVe" secondAttribute="trailing" id="Ygn-jU-BfA"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="MJ5-dr-tOt" secondAttribute="bottom" constant="10" id="abl-cq-k4H"/>
+                                        <constraint firstItem="zF0-VV-dtu" firstAttribute="top" secondItem="k0t-dK-n1x" secondAttribute="bottom" constant="5" id="bK9-zf-3wK"/>
+                                        <constraint firstItem="i40-9b-wzS" firstAttribute="trailing" secondItem="MZ5-sd-5Ky" secondAttribute="trailingMargin" id="dwr-lx-1Vt"/>
+                                        <constraint firstItem="i40-9b-wzS" firstAttribute="leading" secondItem="MZ5-sd-5Ky" secondAttribute="leadingMargin" id="ew6-oS-QR3"/>
+                                        <constraint firstItem="MJ5-dr-tOt" firstAttribute="top" secondItem="zXI-Wo-tc6" secondAttribute="bottom" constant="5" id="iui-yP-1Of"/>
+                                        <constraint firstItem="zXI-Wo-tc6" firstAttribute="leading" secondItem="MZ5-sd-5Ky" secondAttribute="leadingMargin" id="mhq-Q6-Mth"/>
+                                        <constraint firstItem="k0t-dK-n1x" firstAttribute="trailing" secondItem="MZ5-sd-5Ky" secondAttribute="trailingMargin" id="mzl-8U-31n"/>
+                                        <constraint firstItem="MLZ-JJ-lVe" firstAttribute="leading" secondItem="MZ5-sd-5Ky" secondAttribute="leadingMargin" id="n2F-TX-V6V"/>
+                                        <constraint firstItem="MLZ-JJ-lVe" firstAttribute="top" secondItem="g2p-z2-AqC" secondAttribute="bottom" constant="5" id="qcN-8D-Bsm"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="MJ5-dr-tOt" secondAttribute="trailing" id="qlN-oM-ngh"/>
+                                        <constraint firstItem="g2p-z2-AqC" firstAttribute="leading" secondItem="MZ5-sd-5Ky" secondAttribute="leadingMargin" id="uPe-2f-TAh"/>
+                                        <constraint firstItem="zXI-Wo-tc6" firstAttribute="top" secondItem="MLZ-JJ-lVe" secondAttribute="bottom" constant="10" id="zXn-xb-2mx"/>
+                                        <constraint firstItem="g2p-z2-AqC" firstAttribute="top" secondItem="zF0-VV-dtu" secondAttribute="bottom" constant="10" id="zaa-rM-teq"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="expirationLabel" destination="zF0-VV-dtu" id="ANa-rX-cIq"/>
+                                    <outlet property="issuedAtLabel" destination="MJ5-dr-tOt" id="z9I-dE-C4g"/>
+                                    <outlet property="issuerLabel" destination="i40-9b-wzS" id="CEQ-Zv-JQJ"/>
+                                    <outlet property="notBeforeLabel" destination="MLZ-JJ-lVe" id="AgZ-1n-S0h"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="nqc-MU-sVa" id="F5p-8K-HLX"/>
