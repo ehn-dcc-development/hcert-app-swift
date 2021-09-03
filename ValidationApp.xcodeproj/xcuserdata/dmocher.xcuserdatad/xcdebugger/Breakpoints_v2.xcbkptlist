@@ -7,38 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "012EFB77-2E1A-4AC5-8D51-695AA05BB6A6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../Library/Developer/Xcode/DerivedData/ValidationApp-aablbhulgzuhewbzlhllgdgwkgtm/SourcePackages/checkouts/SwiftCBOR/Sources/SwiftCBOR/Decoder/UnkeyedDecodingContainer.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
-            landmarkName = "decodeContainer()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "315F0431-1DB4-4668-8185-05D40743090D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../../Library/Developer/Xcode/DerivedData/ValidationApp-aablbhulgzuhewbzlhllgdgwkgtm/SourcePackages/checkouts/SwiftCBOR/Sources/SwiftCBOR/Decoder/UnkeyedDecodingContainer.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
-            landmarkName = "decodeContainer()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "8AB8482F-695C-4811-A30E-C2640BA6E173"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -97,6 +65,38 @@
             startingLineNumber = "224"
             endingLineNumber = "224"
             landmarkName = "decodeContainer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83B32EA8-404C-4786-8A42-8451718AD93B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ValidationApp/ScanViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "onUpdateValueSets(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "408229DF-EAE1-4350-8B0C-8DEAD649DB26"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ValidationApp/ScanViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "onUpdateBusinessRules(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

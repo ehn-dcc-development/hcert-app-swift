@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lE6-Lp-zNT">
-                                <rect key="frame" x="10" y="532" width="394" height="40"/>
+                                <rect key="frame" x="10" y="532" width="394" height="160"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igI-N4-Twq" userLabel="Error Label">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="0.0"/>
@@ -28,12 +28,31 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inU-Ch-K4l">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="PcY-Jg-rig"/>
-                                            <constraint firstAttribute="height" constant="40" id="eXO-WY-UUl"/>
+                                            <constraint firstAttribute="height" constant="40" id="i2w-vR-3E1"/>
                                         </constraints>
-                                        <state key="normal" title="Force Trustlist Update"/>
+                                        <state key="normal" title="Update Trustlist"/>
                                         <connections>
                                             <action selector="onUpdateTrustlist:" destination="dvk-hs-3xI" eventType="touchUpInside" id="jY3-lK-Doe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLZ-rk-1wT">
+                                        <rect key="frame" x="0.0" y="60" width="394" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="DIT-iu-wbs"/>
+                                        </constraints>
+                                        <state key="normal" title="Update Business Rules"/>
+                                        <connections>
+                                            <action selector="onUpdateBusinessRules:" destination="dvk-hs-3xI" eventType="touchUpInside" id="0mC-ib-qYV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hne-l9-wlP">
+                                        <rect key="frame" x="0.0" y="120" width="394" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zIz-1G-iET"/>
+                                        </constraints>
+                                        <state key="normal" title="Update Value Set"/>
+                                        <connections>
+                                            <action selector="onUpdateValueSets:" destination="dvk-hs-3xI" eventType="touchUpInside" id="Cif-4k-YhX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -65,7 +84,9 @@
                     <connections>
                         <outlet property="errorLabel" destination="igI-N4-Twq" id="qBh-Pd-OTq"/>
                         <outlet property="qrView" destination="np3-xJ-geS" id="yrp-oR-PMA"/>
+                        <outlet property="updateBusinessRulesButton" destination="iLZ-rk-1wT" id="udu-JY-rRi"/>
                         <outlet property="updateTrustlistButton" destination="inU-Ch-K4l" id="RJs-II-Omu"/>
+                        <outlet property="updateValueSetButton" destination="Hne-l9-wlP" id="Fyj-SS-uus"/>
                         <segue destination="qgm-d8-Mnc" kind="show" identifier="showResult" id="o5S-QP-Qzm"/>
                     </connections>
                 </viewController>

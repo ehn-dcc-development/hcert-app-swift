@@ -13,6 +13,7 @@
 		870DB2EA262486F400221D0B /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DB2E4262486F400221D0B /* ScanViewController.swift */; };
 		870DB2EB262486F400221D0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870DB2E5262486F400221D0B /* AppDelegate.swift */; };
 		873131C8267B6AB7000F1D71 /* DGCValueSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873131C7267B6AB7000F1D71 /* DGCValueSets.swift */; };
+		875D4B6126D77E1C00BF74E8 /* DccCachingService in Frameworks */ = {isa = PBXBuildFile; productRef = 875D4B6026D77E1C00BF74E8 /* DccCachingService */; };
 		87621F78267CCA6A001A037A /* DebugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621F77267CCA6A001A037A /* DebugCell.swift */; };
 		87621F7A267CCAB9001A037A /* DebugCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621F79267CCAB9001A037A /* DebugCellViewModel.swift */; };
 		876B11A3262495930086820C /* ValidCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B11A2262495930086820C /* ValidCell.swift */; };
@@ -76,6 +77,7 @@
 		876B11E426249F010086820C /* VaccinationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationCellViewModel.swift; sourceTree = "<group>"; };
 		876B11E926249F850086820C /* RecoveryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryCellViewModel.swift; sourceTree = "<group>"; };
 		876B11EE2624A1340086820C /* TestCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCellViewModel.swift; sourceTree = "<group>"; };
+		877631BE26D770EF00C63619 /* DccCachingService */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DccCachingService; path = ../DccCachingService/DccCachingService; sourceTree = "<group>"; };
 		8796C255261D9EF100BAB830 /* ValidationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8796C266261D9EF300BAB830 /* ValidationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8796C26A261D9EF300BAB830 /* ValidationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAppTests.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8799429E263BE96F002DEBE3 /* ValidationCore in Frameworks */,
+				875D4B6126D77E1C00BF74E8 /* DccCachingService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +145,7 @@
 		8796C24C261D9EF100BAB830 = {
 			isa = PBXGroup;
 			children = (
+				877631BE26D770EF00C63619 /* DccCachingService */,
 				8796C286261DA15900BAB830 /* ValidationCore */,
 				8796C257261D9EF100BAB830 /* ValidationApp */,
 				8796C269261D9EF300BAB830 /* ValidationAppTests */,
@@ -215,6 +219,7 @@
 			name = ValidationApp;
 			packageProductDependencies = (
 				8799429D263BE96F002DEBE3 /* ValidationCore */,
+				875D4B6026D77E1C00BF74E8 /* DccCachingService */,
 			);
 			productName = ValidationApp;
 			productReference = 8796C255261D9EF100BAB830 /* ValidationApp.app */;
@@ -290,6 +295,7 @@
 			mainGroup = 8796C24C261D9EF100BAB830;
 			packageReferences = (
 				8799429C263BE96F002DEBE3 /* XCRemoteSwiftPackageReference "ValidationCore" */,
+				875D4B5F26D77E1C00BF74E8 /* XCRemoteSwiftPackageReference "DccCachingService" */,
 			);
 			productRefGroup = 8796C256261D9EF100BAB830 /* Products */;
 			projectDirPath = "";
@@ -688,6 +694,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		875D4B5F26D77E1C00BF74E8 /* XCRemoteSwiftPackageReference "DccCachingService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/dmocher/Documents/Projects/bmg_impfnachweis/ValidationApp/DccCachingService/DccCachingService";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		8799429C263BE96F002DEBE3 /* XCRemoteSwiftPackageReference "ValidationCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ehn-digital-green-development/ValidationCore";
@@ -699,6 +713,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		875D4B6026D77E1C00BF74E8 /* DccCachingService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 875D4B5F26D77E1C00BF74E8 /* XCRemoteSwiftPackageReference "DccCachingService" */;
+			productName = DccCachingService;
+		};
 		8799429D263BE96F002DEBE3 /* ValidationCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8799429C263BE96F002DEBE3 /* XCRemoteSwiftPackageReference "ValidationCore" */;
