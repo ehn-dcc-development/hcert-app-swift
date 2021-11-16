@@ -103,6 +103,7 @@ class ScanViewController: UIViewController {
     }
     
     private func startScan() {
+        
         validationCore.validateQrCode(qrView) { result in
             if let _ = result.greenpass {
                 self.result = result
